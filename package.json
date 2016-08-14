@@ -1,0 +1,39 @@
+{
+  "name": "timestamp-file-cli",
+  "version": "1.0.0",
+  "description": "cli to create a new file with a timestamp",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --opts test/mocha.opts ",
+    "test:watch": "mocha --opts test/mocha.opts -w",
+    "test:debug": "mocha debug --opts test/mocha.opts",
+    "lint": "eslint ./test ./lib"
+  },
+  "keywords": [
+    "timestamp",
+    "file",
+    "cli"
+  ],
+  "author": "Adam Beck",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "es6-promise": "^3.2.1",
+    "timestamp-file": "^1.0.1"
+  },
+  "bin": {
+    "timestamp-file": "lib/index.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.3.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-mocha": "^4.3.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "mock-fs": "^3.11.0",
+    "mock-require": "^1.3.0",
+    "sinon": "^1.17.5"
+  }
+}
